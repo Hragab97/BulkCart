@@ -1,0 +1,31 @@
+body {
+    font-family: "Poppins", sans-serif ;
+}
+
+.featured-image img {
+    width: 250px;
+}
+
+small {
+    font-weight: 500;
+}
+
+.box-area {
+    width: 930px;
+}
+
+.left-box p,small {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.right-box img {
+    width: 20px;
+}
+
+.right-box {
+    padding: 40px 30px 40px 40px;
+}
+
+::placeholder {
+    font-size: 16px;
+}

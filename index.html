@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TITLE -->
+    <title>BulkCart</title>
+    <!-- ICON -->
+    <link rel="icon" href="./Assets/cart-icon-28356.png">
+    <!-- STYLES -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="Css/fontawesome.min.css">
+    <!-- main -->
+    <link rel="stylesheet" href="Css/styles.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+
+        <div class="row border rounded-5 bg-white p-3 shadow box-area">
+            <div
+                class="col-md-6 border rounded-4 d-flex justify-content-center align-items-center flex-column bg-light left-box">
+
+                <div class="featured-image mb-3">
+                    <img src="./Assets/hero-img.png" class="img-fluid"
+                        alt="login image">
+                </div>
+                <p class="fs-2 fw-semibold">Be Verified</p>
+                <small class="text-wrap text-center">Join our E-Commerce Platform for Free.</small>
+
+            </div>
+            <div class="col-md-6 right-box">
+
+                <div class="row align-items-center">
+                    <div class="header-text mb-4">
+                        <p class="fs-4">Hello, Again</p>
+                        <p>We are happy to have you back.</p>
+                    </div>
+                    <form action="" class=" mb-3">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control form-control-lg bg-light fs-6" id="loginEmail" placeholder="name@example.com">
+                            <div class="alert alert-danger p-2 my-3 d-none">
+                                <small>User Already Exists</small>
+                            </div>
+                            <label for="loginEmail">Email address</label>
+                          </div>
+                          <div class="form-floating">
+                            <input type="password" class="form-control form-control-lg bg-light fs-6" id="loginPassword" placeholder="Password">
+                            <div class="alert alert-danger p-2 my-3 d-none">
+                                <small>Incorrect Password</small>
+                            </div>
+                            <label class="mb-1" for="loginPassword">Password</label>
+                            <div class="form-check d-flex justify-content-between align-items-center">
+                                <div>
+                                    <input type="checkbox" class="form-check-input" id="formCheck">
+                                    <label for="formCheck" class="form-check-label text-secondary"> <small>Remember Me</small></label>
+                                </div>
+                                <div class="forgot">
+                                    <small><a href="#">Forgot Password?</a></small>
+                                </div>
+                            </div>
+                            <div class="alert text-danger p-2 my-3"><small id="note"></small></div>
+                           <div class="input-group my-3">
+                            <button class="btn btn-lg btn-outline-primary w-100 fs-6" id="loginBtn" type="button">Login In</button>
+                           </div>
+                           <div class="input-group mb-3">
+                            <button class="btn btn-lg btn-light w-100 fs-6"><img src="./Assets/google.png" alt="google icon" class="me-2"> Sign In with Google</button>
+                           </div>
+                          </div>
+                    </form>
+                    <div class="row">
+                        <p>Don't have account? <a href="./pages/signup.html">Sign Up</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <!-- bootstrap -->
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <!-- main -->
+    <script src="./Js/main.js"></script>
+</body>
+
+</html>

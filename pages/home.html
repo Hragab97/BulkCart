@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TITLE -->
+    <title>BulkCart</title>
+    <!-- ICON -->
+    <link rel="icon" href="../Assets/cart-icon-28356.png">
+    <!-- STYLES -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../Css/all.min.css">
+    <link rel="stylesheet" href="../Css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="../Css/fontawesome.min.css">
+    <!-- main -->
+    <link rel="stylesheet" href="../Css/home.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+        <!-- HOME SECTION -->
+
+    <div id="scroll-watcher" class="bg-warning">
+    </div>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand fst-italic" href="#">Welcome, <div class="d-inline" id="profileName"></div></a>
+          </div>
+          <div class="w-25">
+            <button class="btn btn-outline-warning fs-6 w-100" id="logoutBtn" type="button">Log Out</button>
+           </div>
+        </nav>
+      </div>
+    <header class="vh-100">
+
+        <div class="d-flex flex-column justify-content-center align-items-center h-100 position-relative text-center"
+            id="header-content">
+            <img src="../Assets/features-3.png" class="position-absolute " alt="business">
+            <div id="header-text">
+                <h2 class="fst-italic fw-bolder text-black">Welcome to your Profile</h2>
+                <h1 class="display-2 fst-italic fw-bolder text-black">Manage Your Business</h1>
+                <p class="fw-bold text-dark">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, suscipit.
+                </p>
+            </div>
+            <a href="#cart" class="scroll-down position-absolute">
+                <div class="dot position-absolute"></div>
+            </a>
+        </div>
+
+
+    </header>
+
+
+    <!-- CRUDS SECTION -->
+    <section class="bg-dark" id="cart">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center vh-100">
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 text-center">
+                    <h2 class="display-4 fw-bolder text-white">The Best Market Place</h2>
+                    <p class="h3 text-white">Bulk up your Cart <i class="fa-solid fa-cart-shopping"></i></p>
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <form action="">
+                        <div class="form-floating my-3 mb-3">
+                            <input type="text" class="form-control" name="productName" id="productName"
+                                placeholder="Product Name">
+                            <label for="productName">Product Name</label>
+                        </div>
+                        <div class="form-floating my-3 mb-3">
+                            <input type="text" class="form-control" name="productCat" id="productCat"
+                                placeholder="Product Category">
+                            <label for="productCat">Product Category</label>
+                        </div>
+                        <div class="form-floating my-3 mb-3">
+                            <input type="number" class="form-control" name="productPrice" id="productPrice"
+                                placeholder="Product Price">
+                            <label for="productPrice">Product Price</label>
+                        </div>
+                        <div class="form-floating my-3 mb-3">
+                            <input type="file" class="form-control" name="productImg" id="productImg"
+                                placeholder="Product Image">
+                            <label for="productImg">Product Image</label>
+                        </div>
+                        <div class="form-floating my-3 mb-3">
+                            <input type="text" class="form-control" name="productDes" id="productDes"
+                                placeholder="Product Description">
+                            <label for="productDes">Product Description</label>
+                        </div>
+                        <input type="text" class="form-control my-3 mx-auto shadow p-3" id="searchProduct"
+                            placeholder="Search by Name...">
+                        <button class="btn btn-outline-primary" type="button" id="addBtn">Add Product</button>
+                        <button class="btn btn-outline-warning disabled" type="button" id="editBtn">Edit
+                            Product</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row py-4 gy-5" id="itemRow">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    <!-- bootstrap -->
+    <script src="../Js/bootstrap.bundle.min.js"></script>
+    <!-- main -->
+    <script src="../Js/home.js"></script>
+</body>
+
+</html>
